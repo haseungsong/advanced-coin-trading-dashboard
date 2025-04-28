@@ -50,9 +50,13 @@ BINANCE_API_KEY    = st.secrets["BINANCE_API_KEY"]
 BINANCE_SECRET_KEY = st.secrets["BINANCE_SECRET_KEY"]
 
 exchange = ccxt.binance({
-    'apiKey':  BINANCE_API_KEY,
-    'secret':  BINANCE_SECRET_KEY,
-    'options': {'defaultType': 'spot'},
+    'apiKey':    BINANCE_API_KEY,
+    'secret':    BINANCE_SECRET_KEY,
+    'options': {
+        'defaultType':    'spot',
+        'fetchCurrencies': False,   # ← 요 부분 추가!
+    },
+    'enableRateLimit': True,
 })
 exchange.load_markets()
 
