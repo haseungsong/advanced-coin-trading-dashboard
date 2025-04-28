@@ -1,0 +1,17 @@
+# 파이썬 바이트코드 및 캐시
+__pycache__/
+*.py[cod]
+
+# 가상환경
+venv/
+.env
+
+# 데이터베이스 로그
+*.db
+*.sqlite3
+
+# macOS 임시 파일
+.DS_Store
+
+# VSCode 설정
+.vscode/

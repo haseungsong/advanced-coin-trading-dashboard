@@ -1,0 +1,11 @@
+streamlit
+streamlit-autorefresh
+ccxt
+pandas
+numpy
+plotly
+apscheduler
+python-dotenv
+python-binance
+vectorbt
+requests
